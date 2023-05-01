@@ -156,6 +156,7 @@ impl FireblocksSigner {
             1 => "ETH",
             3 => "ETH_TEST",
             5 => "ETH_TEST3",
+            10 => "ETH-OPT",
             42 => "ETH_TEST2",
             _ => panic!("Unsupported chain_id"),
         };
