@@ -42,7 +42,7 @@ mod signer;
 mod middleware;
 pub use middleware::FireblocksMiddleware;
 
-use ethers::core::types::Address;
+use ethers::types::Address;
 use jsonwebtoken::EncodingKey;
 use std::{collections::HashMap, time::Instant};
 use thiserror::Error;

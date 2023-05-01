@@ -6,7 +6,7 @@ use crate::{
     FireblocksError, FireblocksSigner,
 };
 use async_trait::async_trait;
-use ethers::core::{
+use ethers::{
     types::{transaction::{eip2718::TypedTransaction, eip712::Eip712}, 
         Address, Signature, H256, U256, },
     utils::hash_message,
@@ -119,7 +119,7 @@ impl FireblocksSigner {
 mod tests {
     use super::*;
     use crate::test_signer;
-    use ethers::core::types::TransactionRequest;
+    use ethers::types::TransactionRequest;
     use rustc_hex::FromHex;
 
     #[tokio::test]

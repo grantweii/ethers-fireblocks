@@ -26,7 +26,7 @@ export FIREBLOCKS_SOURCE_VAULT_ACCOUNT=<the vault id being used for sending txs>
 ## Example Usage
 
  ```rust
-use ethers::core::types::{Address, TransactionRequest};
+use ethers::types::{Address, TransactionRequest};
 use ethers::fireblocks::{Config, FireblocksMiddleware, FireblocksSigner};
 use ethers::providers::{Middleware, Provider};
 use std::convert::TryFrom;

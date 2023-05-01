@@ -164,7 +164,7 @@ impl FireblocksSigner {
 mod tests {
     use super::*;
     use crate::test_signer;
-    use ethers::core::types::TransactionRequest;
+    use ethers::types::TransactionRequest;
     use ethers::providers::Provider;
     use rustc_hex::FromHex;
     use std::convert::TryFrom;
