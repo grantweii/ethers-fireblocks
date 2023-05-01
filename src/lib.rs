@@ -5,9 +5,9 @@
 //!
 //! ```rust,no_run
 //! # async fn broadcasts_tx() -> Result<(), Box<dyn std::error::Error>> {
-//! use ethers_providers::{Middleware, Provider};
-//! use ethers_core::types::Address;
-//! use ethers_fireblocks::{FireblocksSigner, FireblocksMiddleware, Config};
+//! use ethers::providers::{Middleware, Provider};
+//! use ethers::core::types::Address;
+//! use ethers::fireblocks::{FireblocksSigner, FireblocksMiddleware, Config};
 //! use std::convert::TryFrom;
 //!
 //! let cfg = Config::new(
@@ -42,7 +42,7 @@ mod signer;
 mod middleware;
 pub use middleware::FireblocksMiddleware;
 
-use ethers_core::types::Address;
+use ethers::core::types::Address;
 use jsonwebtoken::EncodingKey;
 use std::{collections::HashMap, time::Instant};
 use thiserror::Error;

@@ -26,9 +26,9 @@ export FIREBLOCKS_SOURCE_VAULT_ACCOUNT=<the vault id being used for sending txs>
 ## Example Usage
 
  ```rust
-use ethers_core::types::{Address, TransactionRequest};
-use ethers_fireblocks::{Config, FireblocksMiddleware, FireblocksSigner};
-use ethers_providers::{Middleware, Provider};
+use ethers::core::types::{Address, TransactionRequest};
+use ethers::fireblocks::{Config, FireblocksMiddleware, FireblocksSigner};
+use ethers::providers::{Middleware, Provider};
 use std::convert::TryFrom;
 
 #[tokio::main]

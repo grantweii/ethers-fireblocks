@@ -1,9 +1,9 @@
-use ethers_core::types::{
+use ethers::types::{
     transaction::eip2718::TypedTransaction, Address, BlockId, Bytes, NameOrAddress, Signature,
     TxHash,
 };
-use ethers_providers::{MiddlewareError, Middleware, PendingTransaction};
-use ethers_signers::Signer;
+use ethers::providers::{MiddlewareError, Middleware, PendingTransaction};
+use ethers::signers::Signer;
 
 use crate::{
     types::{
@@ -164,8 +164,8 @@ impl FireblocksSigner {
 mod tests {
     use super::*;
     use crate::test_signer;
-    use ethers_core::types::TransactionRequest;
-    use ethers_providers::Provider;
+    use ethers::core::types::TransactionRequest;
+    use ethers::providers::Provider;
     use rustc_hex::FromHex;
     use std::convert::TryFrom;
 
