@@ -34,7 +34,7 @@ mod jwtclient;
 mod types;
 use types::{TransactionArguments, TransactionDetails, TransactionStatus};
 
-mod api;
+pub mod api;
 use api::FireblocksClient;
 
 mod signer;
