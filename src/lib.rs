@@ -140,6 +140,23 @@ impl Config {
             account_id: account_id.to_string(),
         })
     }
+
+    pub fn new_no_std<T: AsRef<str>>(
+        key: T,
+        api_key: &str,
+        account_id: &str,
+        chain_id: u64,
+    ) -> Result<Self> {
+        let rsa_pem: Vec<u8> = key.as_ref().as_bytes().clone().into();
+        let key = EncodingKey::from_rsa_pem(&rsa_pem)?;
+
+        Ok(Self {
+            key,
+            chain_id,
+            api_key: api_key.to_string(),
+            account_id: account_id.to_string(),
+        })
+    }
 }
 
 impl AsRef<FireblocksClient> for FireblocksSigner {
