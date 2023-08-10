@@ -39,7 +39,7 @@ use api::FireblocksClient;
 
 mod signer;
 
-mod middleware;
+pub mod middleware;
 pub use middleware::FireblocksMiddleware;
 
 use ethers::types::Address;
